@@ -1,0 +1,16 @@
+{
+  "name": "react-ca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "react-ac": "index.js"
+  },
+  "author": "radzhabov",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0"
+  }
+}
