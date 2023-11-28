@@ -19,9 +19,7 @@ class Create {
 
     PathExists() {
         const app = `${this.path}/${this.componentName}/${this.componentName}.${this.flag}`;
-        const style = `${this.path}/${this.componentName}/${this.componentName}.${
-            this.styleModules && 'module.'
-        }${this.styleFlag}`;
+        const style = `${this.path}/${this.componentName}/${this.componentName}.${this.styleFlag}`;
         if (this.styleModules) {
             this.withStyleModules();
         } else {
