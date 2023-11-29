@@ -67,7 +67,7 @@ class Create {
     TsTemplate(componentName, styleFlag, sm) {
         return `
 import React from "react";
-import "./${componentName}.${sm && 'module'}.${styleFlag}";
+import "./${componentName}${sm?'.module':""}.${styleFlag}";
 
 type PropsType={
   
@@ -84,7 +84,7 @@ export default ${componentName};`;
     JsTemplate(componentName, styleFlag, sm) {
         return `
 import React from "react";
-import "./${componentName}.${sm && 'module'}.${styleFlag}"
+import "./${componentName}${sm?'.module':""}.${styleFlag}"
 
 
 const ${componentName} = () => {
